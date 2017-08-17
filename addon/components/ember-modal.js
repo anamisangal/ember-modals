@@ -71,7 +71,7 @@ export default Ember.Component.extend({
         /* Wrap in an if ($this) for testing */
 
         if ($this) {
-          $this[0].focus();
+      //    $this[0].focus();
         }
       });
 
