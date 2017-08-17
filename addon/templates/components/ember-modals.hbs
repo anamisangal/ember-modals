@@ -1,4 +1,4 @@
-{{#each targetObject.modals.modalsInDom as |modal|}}
+{{#each modals.modalsInDom as |modal|}}
 
   {{!-- Overlay --}}
 
@@ -11,7 +11,7 @@
 
     {{component modal.componentName
       modal=modal
-      targetObject=(if modal.context modal.context targetObject)
+      targetObject=(if modal.context modal.context this)
     }}
 
   {{/ember-modal-overlay}}
